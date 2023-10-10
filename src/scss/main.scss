@@ -1,0 +1,13 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+// connect page components
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/weather";
+
+// @import "./components/burger";
+
+@import "./components/footer";

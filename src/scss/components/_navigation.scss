@@ -1,0 +1,27 @@
+.navigation {
+    background: rgb(1, 140, 253);
+    padding: 20px;
+
+    &-logo {
+        a {
+            color: #000;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+    &-menu {
+        ul {
+            li {
+                a {
+                    font-weight: bold;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

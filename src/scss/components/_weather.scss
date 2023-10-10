@@ -1,0 +1,122 @@
+.weather {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(8deg, rgba(2, 0, 36, 1) 0%, rgba(6, 101, 161, 1) 69%);
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    &-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+
+        input {
+            outline: none;
+            width: 250px;
+            height: 40px;
+            border-radius: 25px;
+            padding-left: 10px;
+        }
+
+        button {
+            margin-left: 10px;
+            outline: none;
+            height: 40px;
+            width: 40px;
+            background: #fff;
+            border-radius: 100%;
+        }
+    }
+
+    &-error {
+        width: 50%;
+        display: none;
+        text-align: right;
+        margin-top: 5px;
+
+        p {
+            text-align: right;
+            color: red;
+        }
+    }
+
+    &-inner {
+        display: none;
+    }
+
+    &-img {
+        text-align: center;
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            margin: 0 auto;
+            max-width: 200%;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 80px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 70px;
+            font-weight: 300;
+        }
+
+
+    }
+
+    &-details {
+        margin: 50px 0 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+
+
+        &__box {
+            span {
+                font-size: 40px;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-hum__num {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    &-wind__num {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    &-hum,
+    &-wind {
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+}

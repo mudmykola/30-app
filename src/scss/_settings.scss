@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+ul,
+p,
+h3,
+h2,
+h1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-reset {
+  border: none;
+  background: #f2f2f2;
+  border-radius: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: var(--font-r);
+  height: 46px;
+  padding: 0px 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  font-weight: var(--font-r);
+  font-size: 16px;
+  line-height: 20px;
+  color: $default;
+  background: $c100;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: $default;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  width: var(--container-width);
+}
+
+.box-cont {
+  width: 925px;
+}

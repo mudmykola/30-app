@@ -1,0 +1,83 @@
+// colors
+:root {
+  // base
+  --font-family: "Prompt", sans-serif;
+  --content-width: 1200px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // colors
+  --light-color: #fff;
+  //fonts
+  --font-l: 300;
+  --font-r: 400;
+  --font-m: 500;
+  --font-sb: 600;
+  --font-b: 700;
+  --font-bk: 900;
+  //transition
+  --h-tr: all 0.5s ease;
+  --d-tr: all 0.3s ease;
+}
+
+//color
+$c100: #222939;
+$c200: #599d2e;
+$c300: #bcbcbc;
+
+$default: #fff;
+
+//effect
+%border-ef {
+  box-shadow: 0px 5px 35px rgba(225, 242, 255, 0.9);
+}
+
+%header-ef {
+  background: linear-gradient(180deg,
+      rgba(0, 80, 157, 0.08) 0%,
+      rgba(0, 80, 157, 0) 100%);
+}
+
+// transition
+%dtrans {
+  transition: var(--d-tr);
+}
+
+%htrans {
+  transition: var(--h-tr);
+}
+
+//btn
+%send-btn {
+  border: 1px solid $c100;
+  padding: 17px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  a {
+    font-weight: var(--font-b);
+  }
+}
+
+%global-btn {
+  background: $c200;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: var(--font-m);
+  color: $default;
+  padding: 16px 63px;
+  border-radius: 39px;
+}
+
+//container
+.box-container {
+  width: 925px;
+  float: right;
+  padding: 0 15px;
+}
+
+//hover
+
+%color-eff {
+  background: #64B531;
+  transition: var(--h-tr);
+}
